@@ -1,5 +1,8 @@
+package main.target.testclasses.PageObjects;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class PaginaInicialLogin {
 	
@@ -19,5 +22,9 @@ public class PaginaInicialLogin {
 	
 	public WebElement botaoLogin() {
 		return driver.findElement(By.id("login-button"));
+	}
+	
+	public WebElement cabecalho() {
+		return driver.findElement(By.className("login_logo"));
 	}
 }

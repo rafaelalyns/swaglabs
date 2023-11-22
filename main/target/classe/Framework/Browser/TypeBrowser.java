@@ -1,4 +1,4 @@
-package demo.target.classes.Framework.Browser;
+package main.target.classe.Framework.Browser;
 
 
 public enum TypeBrowser {

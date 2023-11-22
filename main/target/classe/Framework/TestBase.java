@@ -1,18 +1,16 @@
+package main.target.classe.Framework;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 
-import Framework.Utils.FileOperation;
-import demo.target.classes.Framework.Browser.DriverManager;
-import demo.target.classes.Framework.Browser.TypeBrowser;
-
-public class TestBase extends DriverManager {
+public class TestBase extends main.target.classe.Framework.Browser.DriverManager {
     private static WebDriver driver;
 
-    private static String URL = FileOperation.getProperties("url").getProperty("index");
+    private static String URL = main.target.classe.Framework.Utils.FileOperation.getProperties("url").getProperty("index");
 
     public static WebDriver getDriverManager() {
-        driver = getDriver(TypeBrowser.CHROME);
+        driver = getDriver(main.target.classe.Framework.Browser.TypeBrowser.CHROME);
         return driver;
     }
     @BeforeEach

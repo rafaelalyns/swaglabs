@@ -1,8 +1,12 @@
-package demo.src.main.java.Framework;
+package src.demo.src.main.java.Framework;
 
-import demo.target.classes.Framework.Browser.DriverManager;
-import demo.target.classes.Framework.Browser.TypeBrowser;
-import demo.target.classes.Framework.Utils.FileOperation;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.openqa.selenium.WebDriver;
+
+import main.target.classe.Framework.Browser.DriverManager;
+import main.target.classe.Framework.Browser.TypeBrowser;
+import main.target.classe.Framework.Utils.FileOperation;
 
 public class TestBase extends DriverManager {
     private static WebDriver driver;

@@ -1,4 +1,4 @@
-package demo.src.main.java.Framework.Browser;
+package src.demo.src.main.java.Framework.Browser;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,6 +8,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import src.src.main.java.Framework.Browser.TypeBrowser;
 
 public class DriverManager {
 
